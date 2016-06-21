@@ -4,7 +4,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
 
 // If you do not have a Mapbox key, refer to the readme.md
-<script>
+
 mapboxgl.accessToken = 'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
 var map = new mapboxgl.Map({
     container: 'map', // container id
@@ -12,7 +12,7 @@ var map = new mapboxgl.Map({
     center: [-83.05, 42.33], // starting position
     zoom: 9 // starting zoom
 });
-</script>
+
 
 // Add custom popup html to each marker
 layer.on('layeradd', function(e) {
