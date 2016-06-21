@@ -4,14 +4,9 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
 
 // If you do not have a Mapbox key, refer to the readme.md
-<script>
-mapboxgl.accessToken = 'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/toddfhughes/ciow2gvkl002qayko0yvb6663', //stylesheet location
-    center: [-83.05, 42.33], // starting position
-    zoom: 9 // starting zoom
-});
+var map = L.mapbox.map('map', "toddfhughes-1xcuc0be").setView([-83.05, 43.38],
+	12);
+var layer = L.mapbox.featureLayer().addTo(map)
 
 
 // Add custom popup html to each marker
@@ -205,4 +200,4 @@ function processLayer(result) {
 	new_layer.addTo(map);
 	layer.setGeoJSON(result);
 }
-</script>
+
