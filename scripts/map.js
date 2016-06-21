@@ -4,7 +4,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
 
 // If you do not have a Mapbox key, refer to the readme.md
-var map = L.mapbox.map('map', "toddfhughes.1xcuc0be").setView([-83.05, 43.38],
+var map = L.mapbox.map('map', "toddfhughes.0f9kklle").setView([43.38,-83.05],
 	12);
 var layer = L.mapbox.featureLayer().addTo(map)
 
@@ -194,7 +194,7 @@ function processLayer(result) {
 	} else if (selection_label == "1970") {
 		new_id = 'vulibrarygis.l36db1a5'
 	} else {
-		new_id = 'toddfhughes.1xcuc0be'
+		new_id = 'toddfhughes.0f9kklle'
 	};
 	var new_layer = L.mapbox.tileLayer(new_id);
 	new_layer.addTo(map);
