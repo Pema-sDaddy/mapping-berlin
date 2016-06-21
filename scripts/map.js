@@ -4,7 +4,7 @@ L.mapbox.accessToken =
 	'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
 
 // If you do not have a Mapbox key, refer to the readme.md
-
+<script>
 mapboxgl.accessToken = 'pk.eyJ1IjoidG9kZGZodWdoZXMiLCJhIjoiTm1NampQSSJ9.dQN0mItNsrS4bLZyC3BCYQ';
 var map = new mapboxgl.Map({
     container: 'map', // container id
@@ -205,3 +205,4 @@ function processLayer(result) {
 	new_layer.addTo(map);
 	layer.setGeoJSON(result);
 }
+</script>
