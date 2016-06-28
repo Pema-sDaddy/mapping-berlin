@@ -89,7 +89,7 @@ $(function() {
 
 	// list views from Cloudant that we want to offer as layers
 	var cloudantViews = [];
-	$.getJSON('https://vulibrarygis.cloudant.com/mapping-berlin/_design/tour/',
+	$.getJSON('http://pema-sdaddy.github.io/mapping-berlin/',
 		function(result) {
 			var viewsList = result.views;
 			for (var v in viewsList) {
@@ -122,7 +122,7 @@ $("#search").submit(function(event) {
 
 function getLayer(callback, cloudantView) {
 	var cloudantURLbase =
-		"https://vulibrarygis.cloudant.com/mapping-berlin/_design/tour/";
+		"http://pema-sdaddy.github.io/mapping-berlin/";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -138,7 +138,7 @@ function getLayer(callback, cloudantView) {
 // See http://stackoverflow.com/questions/19916894/wait-for-multiple-getjson-calls-to-finish
 function searchPoints(callback, cloudantSearch) {
 	var cloudantURLbase =
-		"https://vulibrarygis.cloudant.com/mapping-berlin/_design/tour/ids?q=";
+		"http://pema-sdaddy.github.io/mapping-berlin/ids?q=";
 	var cloudantURLcallback = "&callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantSearch + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -157,7 +157,7 @@ function getPoints(cloudantIDs) {
 	}
 
 	function getPoint(id) {
-		var cloudantURLbase = "https://vulibrarygis.cloudant.com/mapping-berlin/_design/tour/";
+		var cloudantURLbase = "http://pema-sdaddy.github.io/mapping-berlin/";
 		var url = cloudantURLbase + id;
 		return $.getJSON(url); // this returns a "promise"
 	}
