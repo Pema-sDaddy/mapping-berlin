@@ -194,7 +194,7 @@ function processLayer(result) {
 	} else if (selection_label == "1970") {
 		new_id = 'vulibrarygis.l36db1a5'
 	} else {
-		new_id = 'toddfhughes.0f9kklle'
+		new_id = 'toddfhughes.0j7569n4'
 	};
 	var new_layer = L.mapbox.tileLayer(new_id);
 	new_layer.addTo(map);
