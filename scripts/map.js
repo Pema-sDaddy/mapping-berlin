@@ -5,7 +5,7 @@ L.mapbox.accessToken =
 
 // If you do not have a Mapbox key, refer to the readme.md
 var map = L.mapbox.map('map', "toddfhughes.0j7569n4").setView([53.649941, -6.798874],
-	11);
+	10);
 var layer = L.mapbox.featureLayer().addTo(map)
 
 
